@@ -32,5 +32,6 @@ rm -rf ~/.gnupg/secring.gpg ||exit 1
 cat $dest/$keyid.secret |gpg --import -a
 cat $dest/all.secret |gpg --import -a
 
-echo "DONE"
+echo
+echo "DONE (you can rm -rf $dest/ now)"
 #rm -rf $dest ||exit 1
